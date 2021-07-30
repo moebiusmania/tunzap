@@ -1,0 +1,28 @@
+/*
+Theme Name: Tunzap!
+Theme URI: http://www.tunzap.com/
+Description: Il tema per il blog e le pagine non-app di Tunzap!
+Author: Salvatore Laisa
+Author URI: http://www.salvatorelaisa.net/
+Version: 1.0
+Tags: white, orange, tunzap, two-columns, fixed-width, threaded-comments
+*/
+@import url("base.css");
+
+.piccolo{
+	font-size: 13px;
+	letter-spacing: 2px;
+}
+.divisore{
+	border-top: 1px solid #4D4D4D;
+	margin: 15px 0;
+}
+.divisore:last-child{
+	border-top: 0;
+}
+.categorie li{
+	display: inline;
+	list-style: none;
+	margin: 0 10px;
+}
+

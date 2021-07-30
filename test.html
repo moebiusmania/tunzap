@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<title>Tunzap/Ferzip chat</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+	<div class="container" ng-controller="ctrlMessaggi">
+		<div class="row">
+			<h1 class="span12">Tunzap/Ferzip chat test</h1>
+		</div>
+
+		<!-- Messaggi -->
+		<div class="row" >
+			<div class="messaggi span12">
+				<ul class="unstyled" ng-model="msg">
+					<li ng-repeat="uno in msg"><span class="label">{{uno.nome}}:</span> {{uno.testo}}</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Scrittura -->
+		<div class="row">
+			<div class="span12">
+				<form class="form-inline well" ng-submit="scrivi()">
+					<input type="text" ng-model="testoIn">
+					<button class="btn">
+						<i class="icon-pencil"></i>
+						Scrivi
+					</button>
+				</form>
+			</div>	
+		</div>
+
+	</div>
+
+</body>
+</html>

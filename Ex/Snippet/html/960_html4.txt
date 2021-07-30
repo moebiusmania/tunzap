@@ -1,0 +1,18 @@
+<div class="container_12">
+	<div id="testata" class="grid_12">
+		<h1>Template del tuo sito</h1>
+	</div>
+	<div id="principale" class="grid_8">
+		<h2>Contenuto</h2>
+		<p>generato da Tunzap! ora divertiti a fare tutto il resto</p>
+		<p>e ricordati da dove comincia il tuo prossimo sito!</p>
+	</div>
+	<div id="barra" class="grid_4">
+		<h3>Barra laterale</h3>
+		<p>Contenuti laterali...</p>
+	</div>
+	<div id="footer" class="grid_12">
+		<h4>Footer</h4>
+		<p>Righetta finale</p>
+	</div>
+</div>

@@ -1,0 +1,20 @@
+{
+  "name": "tunzap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server Ex/sito",
+    "ghpages": "gh-pages -d Ex/sito"
+  },
+  "keywords": [],
+  "authors": [
+    "Salvatore Laisa <moebiusmania@gmail.com>",
+    "Mattia Moscheni <mattia.moscheni@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^3.2.3",
+    "http-server": "^0.12.3"
+  }
+}

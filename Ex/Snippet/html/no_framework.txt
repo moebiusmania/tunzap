@@ -1,0 +1,3 @@
+<h1>Template del tuo sito</h1>
+<p>generato da Tunzap! ora divertiti a fare tutto il resto</p>
+<p>e ricordati da dove comincia il tuo prossimo sito!</p>

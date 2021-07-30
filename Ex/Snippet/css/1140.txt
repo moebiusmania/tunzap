@@ -1,0 +1,4 @@
+<!--[if lte IE 9]>
+	<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" >
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/1140.css" media="screen">

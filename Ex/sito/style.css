@@ -1,0 +1,159 @@
+/* Stili Tunzap! */
+body{
+	font-family: 'Ubuntu', Arial;
+	background-image: url(img/bg.png);
+	padding-top:20px;
+}
+.clear{
+	clear:both;
+}
+.bianco{
+	background-color:white;
+	padding: 15px 0;
+}
+.sfuma{
+	background-image: url(img/sfuma.png);
+	background-repeat:repeat-x;	
+}
+.nota{
+	float: right;
+	width: 300px;
+	font-style:italic;	
+}
+h2{
+	font-size:34px;
+	font-style:italic;
+	font-weight:normal;	
+}
+a{
+	color:#E73E1E;
+}
+a:hover{
+	color:#E73E1E;
+}
+p{
+	font-size: 16px;
+	line-height: 23px;
+}
+.primary{
+	border: 1px solid #E73E1E !important;
+	background: #fe5c14 !important;
+	background: -moz-linear-gradient(top, #fe5c14 1%, #e73e1e 100%) !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#fe5c14), color-stop(100%,#e73e1e)) !important;
+	background: -webkit-linear-gradient(top, #fe5c14 1%,#e73e1e 100%) !important;
+	background: -o-linear-gradient(top, #fe5c14 1%,#e73e1e 100%) !important;
+	background: -ms-linear-gradient(top, #fe5c14 1%,#e73e1e 100%) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe5c14', endColorstr='#e73e1e',GradientType=0 ) !important;
+	background: linear-gradient(top, #fe5c14 1%,#e73e1e 100%) !important;
+}
+#nav a{
+	text-transform:capitalize;
+	font-weight: bold;
+	font-size:29px;
+	text-decoration:none;
+	color: #4D4D4D;
+}
+#nav a:hover{
+	color:#E73E1E;
+}
+#nav a img{
+	margin-top: 10px;
+}
+#nav li{
+	text-align:center;
+	margin-top:20px;
+}
+#centro{
+	padding: 35px 0;
+}
+#vasca{
+	background-color:white;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	box-shadow: 0 0 25px #282828;
+	-moz-box-shadow: 0 0 25px #282828;
+	-webkit-box-shadow: 0 0 25px #282828;
+}
+#barra{
+	background-color: #666666;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	-webkit-border-top-right-radius: 15px;
+	-webkit-border-bottom-right-radius: 15px;
+	-moz-border-radius-topright: 15px;
+	-moz-border-radius-bottomright: 15px;
+}
+h3{
+	font-size: 23px;
+}
+#main,#barra{
+	padding: 10px 0;
+}
+.pag{
+	clear: both;
+	height:340px;
+}
+#main ul{
+	margin-left: 0;
+}
+#main ul li{
+	list-style: none inside;
+	margin: 5px 0;
+	color: #404040;
+}
+
+#main h4{
+	line-height: 22px;
+	margin-bottom:10px;
+}
+#barra h3{
+	color:white;
+	text-align:center;
+}
+#barra img{
+	background-color:#B3B3B3;
+	color: black;
+	display:block;
+	margin:20px auto;
+	border: 1px solid #404040; 
+	box-shadow: 0 0 15px #444;
+	-moz-box-shadow: 0 0 15px #444;
+	-webkit-box-shadow: 0 0 15px #444;
+}
+#footer h4{
+	margin-top:12px;
+	font-size: 24px;	
+}
+#footer .cc img{
+	margin-right: 10px;	
+}
+#footer .cc a{
+	color: white;
+}
+#autori p{	
+	font-size: 14px;
+	line-height:20px;
+}
+#autori a:hover{
+	color: #4D4D4D;
+}
+#autori img{
+	float: left;
+	margin: 15px 10px 0 0;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	box-shadow: 0 0 15px #777;
+	-moz-box-shadow: 0 0 15px #777;
+	-webkit-box-shadow: 0 0 15px #777;
+}
+/* Twitter Feed */
+.tweets{
+	margin-left: 0;
+}
+.tweets li{
+	list-style: none;
+	margin: 5px 0 15px;
+	color: #404040;
+}
