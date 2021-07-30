@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tunzap! (beta) - Dove inizia il tuo sito web</title>
+
+  <!-- Metadati -->
+  <meta name="author" content="Salvatore Laisa e Mattia Moscheni">
+  <meta name="description"
+    content="Tunzap! (beta) e' una semplice webapp gratuita che ti consente in modo rapido di creare il template di base per realizzare una nuova pagina web (o un intero sito). In pochi click avrai a disposizione le tue librerie Css e Javascript preferite, la struttura di cartelle con cui sei piu' comodo e una pagina Html gia' impostata e potrai partire subito a costruire il tuo sito!">
+  <meta name="keywords"
+    content="tunzap, sito, web, template, html, css, javascript, js, prototipi, prototipo, webapp, application, struttura, framework, beta">
+
+  <!-- Importazioni Css -->
+  <link rel="stylesheet" href="https://getbootstrap.com/1.3.0/assets/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:400italic&v2' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+
+  <!-- Favicon -->
+  <link rel="icon" href="fav.png" type="image/png">
+
+  <!-- Pulsante +1 -->
+  <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+    { lang: 'it' }
+  </script>
+</head>
+
+<body>
+
+  <div class="bianco">
+    <div id="testata" class="container">
+      <div class="row">
+        <div id="logo" class="span7">
+          <img src="img/logo.png" alt="Tunzap!" width="400" height="100">
+          <h2>Dove inizia il tuo sito web</h2>
+        </div>
+        <ul id="nav" class="span9">
+          <li class="span2"><a href="http://www.tunzap.com/">home<img src="img/home.png" alt="Home" width="62"
+                height="61"></a></li>
+          <li class="span2"><a href="http://www.tunzap.com/about">about<img src="img/help.png" alt="About" width="62"
+                height="61"></a></li>
+          <li class="span2"><a href="http://blog.tunzap.com">blog<img src="img/blog.png" alt="Blog" width="62"
+                height="61"></a></li>
+          <li class="span2"><a href="http://blog.tunzap.com">idee?<img src="img/blog.png" alt="Blog" width="62"
+                height="61"></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container" id="centro">
+    <div class="row" id="vasca">
+      <!-- App -->
+      <div id="main" class="span11">
+        <h3>Crea il template del tuo sito</h3>
+        <!-- i "passaggi" dell'app -->
+        <form action="" method="get">
+          <div id="pag1" class="pag">
+            <h4>1. Iniziamo: le basi e qualche Css</h4>
+            <h4>Doctype (solo uno)</h4>
+            <p class="nota">Il Doctype e' quella stringa che indica al browser quale versione di Html stai usando.</p>
+            <ul>
+              <li><input name="doctype" value="html5" type="radio" checked="checked"> Html 5</li>
+              <li><input name="doctype" value="html41" type="radio"> Html 4 - Transitional</li>
+              <li><input name="doctype" value="html42" type="radio"> Html 4 - Strict</li>
+            </ul>
+
+            <h4>Reset/Framework CSS (anche piu' di uno)</h4>
+            <p class="nota">I framework e i reset Css possono sensibilmente velocizzare la realizzazione di layout web,
+              se ci prendi un po' la mano...</p>
+            <ul id="css">
+              <li><input type="checkbox" name="css" value="yui"> YUI3 CSS Reset</li>
+              <li><input type="checkbox" name="css" value="960"> 960 Grid System</li>
+              <li><input type="checkbox" name="css" value="boot" checked="checked"> Twitter Bootstrap</li>
+              <li><input type="checkbox" name="css" value="1140"> 1140 CSS Grid</li>
+            </ul>
+
+            <div class="row">
+              <button class="btn span2 offset9 primary prox" type="button">Prossimo ></button>
+            </div>
+          </div>
+          <div id="pag2" class="pag">
+            <h4>2. Scegli le librerie Javascript che ti servono per il tuo nuovo progetto.</h4>
+            <h4>Framework Javascript (scelta multipla)</h4>
+            <p class="nota">E' consigliabile se possibile lavorare con una sola libreria Javascript,ma se il progetto lo
+              richiede qui ci sono le 4 piu' diffuse.</p>
+            <ul id="js_1">
+              <li><input type="radio" name="js1" value="jquery" checked="checked"> jQuery</li>
+              <li><input type="radio" name="js1" value="mootools"> MooTools</li>
+              <li><input type="radio" name="js1" value="proto"> Prototype</li>
+              <li><input type="radio" name="js1" value="ext"> Ext Core</li>
+            </ul>
+            <h4>Utility (scelta multipla)</h4>
+            <p class="nota">Altre librerie ti permettono di aggiungere interattivita' evolute come il drag'n'drop, o
+              l'inserimento semplificato di file Swf.</p>
+            <ul id="js_2">
+              <li><input type="checkbox" name="js2" value="jquery" class="dep"> jQuery UI (richiede jQuery!)</li>
+              <li><input type="checkbox" name="js2" value="shiv" checked="checked"> HTML5 Shiv</li>
+              <li><input type="checkbox" name="js2" value="swf"> SWF Object</li>
+              <li><input type="checkbox" name="js2" value="proto" class="dep"> Script.aculo.us (richiede Prototype)</li>
+            </ul>
+            <div class="row">
+              <button class="btn span2 offset7 prec" type="button">
+                < Indietro</button>
+                  <button class="btn span2 primary prox" type="button">Prossimo ></button>
+            </div>
+
+          </div>
+          <div id="pag3" class="pag">
+            <h4>3. Cartelle necessarie, layout di partenza... e via!</h4>
+            <h4>Cartelle di progetto (scelta multipla)</h4>
+            <p class="nota">Organizzare i vari files e' vitale! Includi solo le cartelle che hai intenzione di usare nel
+              tuo progetto.</p>
+            <ul>
+              <li><input type="checkbox" name="cartelle" value="immagini" checked="checked"> /immagini</li>
+              <li><input type="checkbox" name="cartelle" value="video"> /video</li>
+              <li><input type="checkbox" name="cartelle" value="audio"> /audio</li>
+              <li><input type="checkbox" name="cartelle" value="sorgenti"> /sorgenti</li>
+            </ul>
+            <h4>Layout di partenza (solo uno)</h4>
+            <ul>
+              <li><input name="layout" value="v1" type="radio" checked="checked"> Fisso: testata + contenuti + barra dx
+                + footer</li>
+              <li><input name="layout" value="v2" type="radio"> Fisso: testata + barra sx + contenuti + footer</li>
+              <li><input name="layout" value="v3" type="radio"> Fisso: testata + contenuti + footer</li>
+              <li><input name="layout" value="v4" type="radio"> Fluido: contenuti + barra dx</li>
+            </ul>
+            <div class="row">
+              <button class="btn span2 offset7 prec" type="button">
+                < Indietro</button>
+                  <button class="btn span2 primary fine">Scarica!</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!-- Barra laterale per banners -->
+      <div id="barra" class="span5">
+        <h3>Sponsor</h3>
+        <img src="" alt="Banner" width="180" height="150">
+        <img src="" alt="Banner" width="180" height="150">
+      </div>
+    </div>
+  </div>
+  <div class="bianco sfuma">
+    <div id="footer" class="container">
+      <div class="row">
+        <div class="span5">
+          <h4>Disclaimer</h4>
+          <p>I framework che distribuiamo tramite Tunzap! sono tutti Open Source e vengono rilasciati dai relativi
+            autori con licenze <a href="http://www.gnu.org/copyleft/gpl.html" target="_blank">GPL</a>.</p>
+          <p>Il layout del sito e del blog e' coperto da licenze <a href="http://www.creativecommons.it/"
+              target="_blank">Creative Commons</a> di "Attribuzione - Non commerciale - Non opere derivate".</p>
+          <p class="cc"><a href="http://creativecommons.org/licenses/by-nc-nd/3.0/it/deed.it" target="_blank">
+              <img src="http://creativecommons.org/images/deed/by.png" alt="Attribuzione" width="40" height="40">
+              <img src="http://creativecommons.org/images/deed/nc-eu.png" alt="Non commerciale" width="40" height="40">
+              <img src="http://creativecommons.org/images/deed/nd.png" alt="Non opere derivate" width="40" height="40">
+            </a></p>
+        </div>
+        <div class="span5 offset1">
+          <h4>Social</h4>
+          <div class="bottoni">
+            <iframe
+              src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.tunzap.com&amp;send=false&amp;layout=box_count&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=90&amp;appId=171713412908821"
+              scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:90px;"
+              allowTransparency="true"></iframe>
+            <a href="https://twitter.com/share" class="twitter-share-button"
+              data-text="Vuoi creare pi� velocemente il tuo prossimo sito? prova Tunzap!" data-count="vertical"
+              data-via="tunzap" data-lang="it">Tweet</a>
+            <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+            <g:plusone size="tall"></g:plusone>
+          </div>
+          <ul class="tweets"></ul>
+        </div>
+        <div id="autori" class="span4 offset1">
+          <h4>Gli autori</h4>
+          <a href="http://www.salvatorelaisa.net" target="_blank"><img src="img/salvo.jpg" alt="Salvatore Laisa"
+              width="75" height="75">
+            <h5>Salvatore Laisa</h5>
+          </a>
+          <p>Web/Interactive/UI Designer, bassista e Signore del Tempo.</p>
+          <div class="clear"></div>
+          <a href="http://www.ferzip.com" target="_blank"><img src="img/mosche.jpg" alt="Salvatore Laisa" width="75"
+              height="75">
+            <h5>Mattia Moscheni</h5>
+          </a>
+          <p>Web Developer, Sistemista, giocatore di Capoeira e neo fumatore di pipa.</p>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<!-- Importazioni Javascript -->
+<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script type="text/javascript" src="script/salvoAlpha.js"></script>
+<script type="text/javascript" src="script/salvoTwitFeed.js"></script>
+<script type="text/javascript" src="script/tunzap.js"></script>
+<script type="text/javascript" src="script/banner.js"></script>
+
+</html>
